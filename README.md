@@ -30,8 +30,27 @@ Upload Video → Read Video Frames → YOLO Pose Model → Pose Detection → An
 
 Webcam:
 Webcam Stream → WebRTC → Video Frame → YOLO Pose Model → Keypoints & Skeleton → Annotated Live Frame
+# Pose Keypoints
+The YOLO Pose model estimates 17 human body keypoints based on the COCO human pose format:
+- Nose
+- Left Eye
+- Right Eye
+- Left Ear
+- Right Ear
+- Left Shoulder
+- Right Shoulder
+- Left Elbow
+- Right Elbow
+- Left Wrist
+- Right Wrist
+- Left Hip
+- Right Hip
+- Left Knee
+- Right Knee
+- Left Ankle
+- Right Ankle
 
-The application uses the pre-trained yolo26n-pose.pt model from Ultralytics to detect human poses. For each detected person, the model estimates body keypoints and visualizes the pose using keypoints and skeleton connections.
+These keypoints represent important body joints and facial landmarks. The detected keypoints are connected to form a skeleton that visualizes the person's estimated pose.
 # Model
 YOLO26 Nano Pose
 # Live Demo
