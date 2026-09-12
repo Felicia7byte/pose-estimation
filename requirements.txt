@@ -1,6 +1,6 @@
 streamlit
 ultralytics
 Pillow
-opencv-python
+opencv-python-headless
 av
 streamlit-webrtc
